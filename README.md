@@ -9,13 +9,24 @@ The goal is to:
 - Measure their impact on learning performance, runtime, and data characteristics
 - Support reproducible experimentation across multiple datasets and methods
 
-The focus is on **tabular data**, with an emphasis on **dataset reduction**, **runtime efficiency**, and **preservation of statistical and geometric properties**.
+Notes: 
+- Distillation method are unsupervised, as they do not use labels
+
+
+
+The focus is on **tabular data**, with an emphasis on **dataset reduction**, **runtime efficiency**.
+
+This repository accompanies
+[1] C. Florea and E. Barnoviciu.  
+**Tabular Data Distillation: An Extensive Comparison.**  
+under review, 2026.
+
 
 ---
 
 ## 2. Pipeline Overview
 
-The experimental pipeline follows these steps:
+The experimental pipeline is showed in the following figure and contains these steps:
 
 1. Dataset acquisition
 2. Data cleaning and structuring
@@ -23,7 +34,7 @@ The experimental pipeline follows these steps:
 4. Model training and evaluation
 5. Utility analyses (tailness, visualization, duration)
 
-Each step is modular and configurable.
+![The schematic of the pipeline](figures/Overall_Scheme.png)
 
 ---
 
